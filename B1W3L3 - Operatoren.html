@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  	<script>
+  	    document.write("Tafel van 6: <br>");
+  		MP = 1
+        while (MP < 11) { //Zolang de Multiplier onder 11 is (1-10, de gehele tafel), gaat hij door met MultiPlier * 6 tonen.
+          MP6 = (MP * 6); //Dit doet de MultiPlier * 6.
+          document.write(MP6 + " "); //Dit zet de MultiPlier * 6 op de pagina.
+          MP++; //Dit doet MultiPlier + 1.
+        }
+        document.write("<br><br>")
+  		  		document.write("Tafel van 3: <br>");
+  		MP = 1
+        while (MP < 11) { //Zolang de Multiplier onder 11 is (1-10, de gehele tafel), gaat hij door met MultiPlier * 3 tonen.
+          MP6 = (MP * 3); //Dit doet de MultiPlier * 3.
+          document.write(MP6 + " "); //Dit zet de MultiPlier * 3 op de pagina.
+          MP++; //Dit doet MultiPlier + 1.
+        }
+        T = prompt("Vul het getal in waarvan je de tafel wilt berekenen:")
+        document.write("<br><br>")
+                document.write("Tafel van " + T + ":<br>")
+        //Ik heb allen 6/3 Vervangen met een variabel (T), waardoor je met de prompt op het begin de tafel van welk getal dan ook kan berekenen.
+        MP = 1
+        while (MP < 11) { //Zolang de Multiplier onder 11 is (1-10, de gehele tafel), gaat hij door met MultiPlier * T tonen.
+          MP6 = (MP * T); //Dit doet de MultiPlier * T.
+          document.write(MP6 + " "); //Dit zet de MultiPlier * T op de pagina.
+          MP++; //Dit doet MultiPlier + 1.
+        }
+        document.write("<br><br>")
+  		Start = 12;  //In deze lines doet het script een aantal berekeningen met het startgetal.
+        document.write(Start + " + 6 = "); //Dit soort lines laten op de pagina zien wat er gebeurd.
+        Start = Start + 6; //Dit soort lines doen ook daadwerkelijk de berekeningen.
+        document.write(Start + "<br>" + Start + " * 10 = ");
+        Start = Start * 10;
+        document.write(Start + "<br>" + Start + " / 5 = ");
+        Start = Start / 5;
+        document.write(Start + "<br>" + Start + " - 12 = ");
+        Start = Start - 12;
+        document.write(Start + "<br>" + Start);
+        document.write("<br><br>")
+        XStart = prompt("Vul een getal in:"); //Deze lines doen hetzelfde als de vorige, alleen dan met een startgetal dat door de gebruiker ingevoerd wordt.
+        document.write(XStart + " + 6 = ");
+        XStart = XStart + 6;
+        document.write(XStart + "<br>" + XStart + " * 10 = ");
+        XStart = XStart * 10;
+        document.write(Start + "<br>" + XStart + " / 5 = ");
+        XStart = XStart / 5;
+        document.write(Start + "<br>" + XStart + " - 12 = ");
+        XStart = XStart - 12;
+        document.write(XStart + "<br>" + XStart);
+        //Het is me opgevallen dat als je de gebruiker zelf het getal laat invoeren, dat deze berekening niet werkt zoals die hoort.
+    </script>
+  </body>
+</html>
